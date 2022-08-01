@@ -119,10 +119,10 @@
       <div class ="about-right-col">
         <div class="about-text">
           <h1>About Us</h1>
-          <span class="square"></span>
+          <!-- <span class="square"></span> -->
           <p>Kittivaasal is all about translating your ideas to impactful buisness. We provide full-fledged marketing,salesforce and digital support. Our gaumt of web services includes websites, applications, portals, communities and e-commerce stores, widgets, discussion forums and blogs, content management systems, mailers, landing pages and more.
           </p>
-          <span class="square"></span>
+          <!-- <span class="square"></span> -->
           <h2>"Coming together is a beginning; keeping together is progress; working together is success"</h2>
           <h3>--Henry Ford</h3>
         </div>
@@ -239,11 +239,11 @@
   <div class ="about-right-col">
     <div class="about-text">
       <h1>Vision</h1>
-      <span class="square"></span>
+      <!-- <span class="square"></span> -->
       <p>
         Kittivaasal's objective is to development & commercialization of Smart & Automations in IoT, Applications, Web services to create better futuristic development & marketing ecosystem.
       </p>
-      <span class="square"></span>
+      <!-- <span class="square"></span> -->
       <h1>Mission</h2>
       <p>Kittivaasal in on its mission to connect talented and aspiring workforce with the constantly evolving competent world. Our forever young team provides full service from market analysis, concept, design and development of appications, testing and marketing.
       </p>
@@ -320,6 +320,34 @@
       </div>
     </div>
     </section>
+    <!--COUNTERS  -->
+    <div class="counter_wrapper">
+      <div class="container">
+    
+              <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                      <div class="count_box box_hover">
+                          <h3><span class="timer">23</span>M+</h3>
+                          <h4>PEOPLE USING</h4>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                      <div class="count_box box_center">
+                          <h3><span class="timer">1024</span></h3>
+                          <h4>ELEMENTS</h4>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                      <div class="count_box box_hover">
+                          <h3><span class="timer">10</span>B</h3>
+                          <h4>PEOPLE USING</h4>
+                      </div>
+                  </div>
+              </div>
+        
+      </div>
+    </div>
+    <!--  -->
     <!-- projects -->
     <div id="slider-container">
       <h1 class="text-center">OUR PROJECTS</h1></h1>
@@ -820,6 +848,85 @@
   </section>
 
     <!-- end testi -->
+    <!-- contact -->
+    <div class="container contact-main">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>92 Cherry Drive Uniondale, NY 11553</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>lorem@ipsum.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- end contact -->
     <!-- footer -->
       <!-- Site footer -->
       <footer class="site-footer">
@@ -893,6 +1000,7 @@
         }
       } -->
     </script>
+    <!-- testi script -->
    <script>
     var slider = document.getElementById('slider');
     var active = document.getElementById('active');
@@ -1025,5 +1133,63 @@ $(document).ready(function () {
   });
 });
    </script>
+   <!-- test end -->
+   <!-- counter -->
+   <script>
+  const animationDuration = 3000;
+
+const frameDuration = 1000 / 60;
+
+const totalFrames = Math.round( animationDuration / frameDuration );
+
+const easeOutQuad = t => t * ( 2 - t );
+
+const animateCountUp = el => {
+	let frame = 0;
+	const countTo = parseInt( el.innerHTML, 10 );
+	
+	const counter = setInterval( () => {
+		frame++;
+
+		const progress = easeOutQuad( frame / totalFrames );
+
+		const currentCount = Math.round( countTo * progress );
+
+
+		if ( parseInt( el.innerHTML, 10 ) !== currentCount ) {
+			el.innerHTML = currentCount;
+		}
+
+		if ( frame === totalFrames ) {
+			clearInterval( counter );
+		}
+	}, frameDuration );
+};
+
+	const countupEls = document.querySelectorAll( '.timer' );
+	countupEls.forEach( animateCountUp );
+
+</script>
+<script>
+  const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+Footer
+</script>
      </body>
 </html>
