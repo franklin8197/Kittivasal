@@ -7,7 +7,7 @@
 } */
 body{
   cursor:none;
-  overflow-x: hidden;
+   overflow-x: hidden; 
   background: #C5DDE9 ;
   font-family: 'Poppins', sans-serif;
 }
@@ -390,25 +390,102 @@ z-index:2;
   margin: 15px 0;
 }
 /* end about us */
+/* Chimpik */
+.Chimpmain{
+  width: 100%;
+  min-height: 85vh; 
+  display: flex;
+  flex-wrap: wrap;
+  background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,221,233,1) 100%);
+  padding: 50px 0;
+}
+.chimpsub{
+  margin: 20px 0;
+  flex-basis: 50%;
+  min-width: 300px;
+  height: 100%;
+  position: relative;
+  text-align: -webkit-center;
+}
+.text-box{
+  max-width: 400px;
+  margin-top: 100px;
+}
+.text-box h5{
+  color: #B2D4E6;
+}
+.text-box h1{
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color:#002f4b;
+}
+.gallery-box{
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+.gallery-box img{
+  width: 100%;
+  border: 10px solid rgba(255,255,255,0.2);
+  box-sizing: border-box;
+  height:60vh;
+}
+.gallery-box ul{
+position: absolute;
+right: -100px;
+top: 50%;
+transform: translateY(-50%);
+z-index: 2;
+}
+.gallery-box ul li{
+  list-style: none;
+  font-size: 16px;
+  font-family: bold;
+  padding: 0 30px;
+  cursor: pointer;
+  position: relative;
+}
+.gallery-box .active{
+  color: #002f4b;;
+}
+.gallery-box ul li::after{
+content: '';
+width: 30px;
+height: 2px;
+background: transparent;
+position: absolute;
+top: 8px;
+left: -5px;
+}
+.gallery-box .active::after{
+  background:#002f4b ;
+}
 /* features */
 .Featuresub{
   float: left;
-  width: 50%;
-  padding: 100px 40px;
+  width: 49%;
+  padding: 10px 40px;
   height: 100vh; /* Should be removed. Only for demonstration */
 }
 .FeatureMain{
   background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,221,233,1) 100%);
 
 }
-
+.vl {
+  border-right:3px solid #C9DFEA;
+  height: 87vh;
+}
 /* Clear floats after the columns */
 .FeatureMain:after {
   content: "";
   display: table;
   clear: both;
   }
-
+.inner-img{
+  width:32px;
+  margin-right: 5px;
+}
 
  /* .features-main{
   padding: 100px 0;
