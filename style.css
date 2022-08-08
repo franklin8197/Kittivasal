@@ -32,7 +32,7 @@ color: #fff;
 #menuBtn{
   width: 40px;
   position: fixed;
-  right: 10px;
+  right: 24px;
   top: 35px;
   z-index: 2;
   cursor: pointer;
@@ -432,13 +432,13 @@ z-index:2;
   margin-top: 100px;
 }
 .text-box h5{
-  color: #B2D4E6;
+  color: #488811;
 }
 .text-box h1{
   font-size: 50px;
   font-weight: 100;
   letter-spacing: 3px;
-  color:#002f4b;
+  color:#329AFC;
 }
 .gallery-box{
   max-width: 325px;
@@ -532,12 +532,33 @@ left: 19px;
   background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,221,233,1) 100%);
 } */
 /* end features */
-/* Benefits */
-/* .Benefits-main{
-  padding: 100px 0;
+.Features-main{
   background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,221,233,1) 100%);
-} */
-/* End Benefits */
+  padding:30px 20px;
+  text-align: justify;
+  width: 100%;
+}
+.inner-img{
+  margin-right: 10px;
+  width: 32px;
+}
+.FeatBeneHead{
+  padding: 20px;
+}
+.FeatBeneHead{
+  text-align: center;
+}
+@media(min-width:576px){
+  .Features-main{
+    background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,221,233,1) 100%);
+    width:100%;
+    padding:50px 20px;
+  }
+  .FeatBeneHead{
+    text-align: start;
+  }
+}
+/* End Features */
 /* Counters */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 .counter_wrapper{padding:100px 0;width:100%;background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,221,233,1) 100%);font-family: 'Poppins', sans-serif;}
@@ -715,7 +736,6 @@ z-index: 2;
 }
 
 .heading span {
-  font-style: italic;
   font-size: 30px;
 }
 
@@ -860,7 +880,7 @@ z-index: 2;
   background-position: center;
 }
 .white-heading:after {
-  background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+  /* background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png); */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1056,7 +1076,6 @@ text-align: center;
 color: #ffffff;
 font-size: 22px;
 }
-
 .testimonial .carousel {
 padding-bottom:50px;
 z-index: 2;
@@ -1264,7 +1283,7 @@ form {
 }
 
 .title {
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -1282,7 +1301,7 @@ form {
   border: 2px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -1304,7 +1323,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #fafafa;
+  color: #000000;
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -1322,7 +1341,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #B2D4E6;
+  color: #002f4b;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -1683,6 +1702,11 @@ textarea.input {
 }
 /* Footer video */
 /* gallery */
+.Gallery-head{
+    background:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(197,221,233,1) 100%); ;
+    font-size: 60px;
+    color: white;
+}
 .img-gallery{
  width: 100%;
 padding: 10px 10px;
