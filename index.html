@@ -45,11 +45,11 @@
     <!-- nav -->
     <nav id="sideNav">
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PROJECT</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#area">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#service">SERVICES</a></li>
+        <li><a href="#Chimpmain">OUR PRODUCT</a></li>
+        <li><a href="#contact-main">CONTACT</a></li>
       </ul>
     </nav>
     <img src ="images/menu (2).png" id="menuBtn">
@@ -105,10 +105,10 @@
 </div >
 </div>
 <!-- cursor -->
-<div class="smallCursor">
+<!-- <div class="smallCursor">
 </div>
 <div class = "largerCursor">
-</div>
+</div> -->
 <!-- end crsor -->
   <!-- end main Banner -->
     <!-- about us -->
@@ -258,12 +258,16 @@
   <div class="col-md-6 chimpsub">
     <div class ="text-box">
       <h5>OUR PRODUCT</h5>
-      
       <h1><b>CHIMPIK</b></h1>
+      <button class="Chimp-btn">Download on Playstore</button>
+      <button class="Chimp-btn">Go to Website</button>
     </div>
   </div>
   <div class="col-md-6 Chimpikpics">
-    <div class="gallery-box">
+    <div class="sliderWrap">
+      <img src=images/3.png id="slide" alt="Slider Image">
+    </div>
+    <!-- <div class="gallery-box">
       <img src="/images/3.png" id="galleryinner">
       <ul>
         <li class="listinner">01</li>
@@ -271,7 +275,7 @@
         <li class="listinner">03</li>
         <li class="listinner">04</li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -897,23 +901,42 @@ $(".btn-with-icon").on("click", function() {
 <!-- end chimp -->
 <!-- Features script -->
 <script>
-  var Sphere = document.getElementById("Sphere");
-  var upBtn = document.getElementById("upBtn");
-  var downBtn = document.getElementById("downBtn");
+  const first = () => {
+  document.getElementById("slide").src = "/images/iPhone 12 Pro (1).png"};
+setInterval(first, 2000);
 
-  var rotateValue = Sphere.style.transform;
-  var rotateSum;
+const second = () => {
+  document.getElementById("slide").src = "/images/iPhone 13 Pro (1).png";
+};
+setInterval(second, 4000);
 
-  upBtn.onclick = function (){
-    rotateSum = rotateValue + "rotate(-90deg)";
-    Sphere.style.transform = rotateSum;
-    rotateValue = rotateSum;
-  }
-  downBtn.onclick = function (){
-    rotateSum = rotateValue + "rotate(90deg)";
-    Sphere.style.transform = rotateSum;
-    rotateValue = rotateSum;
-  }
+const third = () => {
+  document.getElementById("slide").src = "/images/Galaxy Note 20 Ultra (1).png";
+};
+setInterval(third, 6000);
+
+// const fourth = () => {
+//   document.getElementById("slide").src = "https://images.unsplash.com/photo-1587614295999-6c1c13675117?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80";
+// };
+// setInterval(fourth, 8000);
+
+  // var Sphere = document.getElementById("Sphere");
+  // var upBtn = document.getElementById("upBtn");
+  // var downBtn = document.getElementById("downBtn");
+
+  // var rotateValue = Sphere.style.transform;
+  // var rotateSum;
+
+  // upBtn.onclick = function (){
+  //   rotateSum = rotateValue + "rotate(-90deg)";
+  //   Sphere.style.transform = rotateSum;
+  //   rotateValue = rotateSum;
+  // }
+  // downBtn.onclick = function (){
+  //   rotateSum = rotateValue + "rotate(90deg)";
+  //   Sphere.style.transform = rotateSum;
+  //   rotateValue = rotateSum;
+  // }
 
 </script>
 <!-- features end -->

@@ -1,7 +1,6 @@
 /* nav */
 
 body{
-  cursor:none;
    overflow-x: hidden; 
   background: #C5DDE9 ;
   font-family: 'Poppins', sans-serif;
@@ -49,6 +48,7 @@ color: #fff;
   }
 }
 /* end nav */
+
 /* main css */
 .context {
   width: 100%;
@@ -412,6 +412,37 @@ z-index:2;
 }
 /* end about us */
 /* Chimpik */
+.sliderWrap {
+  width: 100%;
+  height: 400px;
+}
+
+.sliderWrap img {
+  /* width: 400px; */
+  height: 65vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Chimp-btn{
+  width: 49%;
+  background-color: transparent;
+  border: 1px solid #999;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #329AFC 50%,transparent 50%);
+  background-size: 300%;
+  background-position: 100%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+.Chimp-btn:hover{
+  background-position: 0;
+  color: #fff;
+  z-index: 2;
+}
 .Chimpmain{
   width: 100%;
   min-height: 85vh; 
